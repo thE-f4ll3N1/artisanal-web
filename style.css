@@ -5655,6 +5655,23 @@ textarea.w-input, textarea.w-select {
     position: relative;
   }
 
+  /* Newly added */
+  .nav-menu-open {
+    z-index: 1000000;
+    width: 3rem;  /* Adjust size as needed */
+    height: 3rem; /* Adjust size as needed */
+    cursor: pointer;
+    background-image: url("/assets/Nav_menu.svg");  /* Replace with your open menu image URL */
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    flex: none;
+    margin-left: 1rem;
+    display: block;
+    position: relative;
+  }
+
   .nav-link-dot {
     display: none;
   }
