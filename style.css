@@ -205,9 +205,44 @@ td, th {
   content: "î˜";
 }
 
-.w-icon-nav-menu:before {
+/* .w-icon-nav-menu:before {
   content: "î˜‚";
+} */
+
+/* New css for nav menu icon */
+
+.w-icon-nav-menu {
+  position: relative; /* Ensure the pseudo-elements are positioned correctly */
+  width: 3rem;  /* Adjust size as needed */
+  height: 3rem; /* Adjust size as needed */
+  display: inline-block; /* Ensure it displays as a block-level element */
+  cursor: pointer; /* Optional: changes the cursor to a pointer */
 }
+
+.w-icon-nav-menu:before, .w-icon-nav-menu:after {
+  content: "";
+  display: block;
+  width: 100%; /* Adjust size as needed */
+  height: 100%; /* Adjust size as needed */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute; /* Position it relative to the parent */
+  top: 0;
+  left: 0;
+}
+
+.w-icon-nav-menu:before {
+  background-image: url("/assets/65d9997f6c7b02f915cc0ef5_Nav\ menu.svg"); /* Replace with your image URL */
+}
+
+.w-icon-nav-menu:after {
+  background-image: url("/assets/65d9997f6c7b02f915cc0ef5_Nav\ menu.svg"); /* Replace with your image URL */
+  top: auto; /* Adjust positioning as needed */
+  bottom: 0; /* Adjust positioning as needed */
+}
+
+/* New css for nav menu icon ends */
 
 .w-icon-arrow-down:before, .w-icon-dropdown-toggle:before {
   content: "î˜ƒ";
@@ -5278,12 +5313,12 @@ textarea.w-input, textarea.w-select {
   }
 
   .menu-button {
-    padding: 12px;
+    padding: 5px;
   }
 
   .menu-button.w--open {
-    color: #fff;
-    background-color: #a6b1bf;
+    /* color: #fff; */
+    /* background-color: #a6b1bf; */
   }
 }
 
@@ -6153,7 +6188,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .menu-button {
-    background-color: #fff;
+    /* background-color: #fff; closed for removing white bg*/
     border-radius: 100%;
   }
 
